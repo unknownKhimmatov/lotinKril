@@ -1,0 +1,197 @@
+body {
+    background: #3b3b3b;
+    background-image: url("img/kali.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.containerboss {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    border: 3px solid white;
+}
+
+.container {
+    width: 600px;
+    height: 500px;
+    margin: 40px 40px 40px 30px;
+    border: 3px solid rgb(145, 145, 145);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.container2 {
+    width: 600px;
+    height: 500px;
+    margin: 40px 30px 20px 0;
+    border: 3px solid rgb(145, 145, 145);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+textarea {
+    outline: none;
+    resize: none;
+    width: 550px;
+    height: 180px;
+    margin-top: 20px;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    font-size: 15px;
+    border: 3px solid rgba(255, 255, 255, 0.637);
+    border-radius: 3px;
+}
+
+::placeholder {
+    color: #fffefed3;
+    font-size: 18px;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    margin-top: 19px;
+    background-color: rgba(71, 71, 71, 0.2);
+    color: rgb(74, 131, 255);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 0 2px rgb(180, 180, 180) inset, 0 0 0 2px rgb(180, 180, 180) inset,
+        0 0 0 2px rgb(180, 180, 180) inset, 0 0 0 2px rgb(180, 180, 180) inset;
+    font-size: 15px;
+}
+
+.containerboss .container:hover {
+    border: 3px solid rgba(2, 118, 185, 0.671);
+}
+
+.containerboss .container2:hover {
+    border: 3px solid rgba(2, 118, 185, 0.671);
+}
+@media only screen and (max-width: 750px){
+    body {
+        background-image: url("img/linux.jpg") ;
+        background-size:cover;
+        background-repeat: no-repeat;
+    }
+    .containerboss{
+        background-color: #575757a2;
+        display:block;
+        width: auto;
+        height: auto;
+        border: 2px solid white;
+    }
+    .container{
+        margin: 15px 10px 40px 10px;
+        width: 400px;
+        height: 310px;
+        border: 3px solid rgba(145, 145, 145);
+        background-color: rgba(61, 61, 61, 0.301);
+    }
+    .container2{
+        margin: 0 10px 15px 10px;
+        width: 400px;
+        height: 310px;
+        border: 3px solid rgb(145, 145, 145);
+        background-color: rgba(61, 61, 61, 0.301);
+    }
+    textarea{
+        margin-top: 10px;
+        width: 595px;
+        height: 180px;
+        font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.637);
+    border-radius: 2px;
+}
+textarea:hover{
+    border: 3px solid rgba(1, 202, 27, 0.575);
+}
+
+    ::placeholder {
+        color: #fffefed3;
+        font-size: 16px;
+    }
+    button{
+        width: 100px;
+        height: 50px;
+        margin-top: 6px;
+        margin-bottom: 3.5px;
+        font-size: 17px;
+        border-radius: 5px;
+        border: 2px solid rgba(255, 255, 255, 0.637);
+    }
+    button:hover {
+        box-shadow: 0 0 0 3px rgb(180, 180, 180) inset, 0 0 0 3px rgb(180, 180, 180) inset,
+        0 0 0 3px rgb(180, 180, 180) inset, 0 0 0 3px rgb(180, 180, 180) inset;
+        font-size: 15px;
+    }
+    .containerboss .container:hover {
+        border: 3px solid rgba(2, 118, 185, 0.671);
+    }
+    
+    .containerboss .container2:hover {
+        border: 3px solid rgba(2, 118, 185, 0.671);
+    }
+}
+
+
+
+@media screen and (max-width:968px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .containerboss{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        height: auto;
+        margin-top: 120px;
+    }
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .container2{
+        width: 90%;
+        /* margin-left: 27px;    */
+        height: auto;
+    }
+    textarea{
+        width: 90%;
+    }
+}
+@media screen and (max-width:468px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .containerboss{
+        width: 90%;
+        height: auto;
+        margin-top: 120px;
+    }
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .container2{
+        width: 90%;
+
+        height: auto;
+    }
+    textarea{
+        width: 90%;
+    }
+}
